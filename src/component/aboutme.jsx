@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <section id="about" className="mx-auto flex justify-between items-center w-full bg-gray-about py-24">
-      <div className="about-bg w-1/2 flex flex-col justify-center items-center about-bg-height">
+      <div className="about-bg w-1/2 ml-8 flex flex-col justify-center items-center about-bg-height">
         <h1 className="text-gray-300 text-4xl self-center">About Me</h1>
         <span className=" self-start pl-20">
           <hr className="line" />
