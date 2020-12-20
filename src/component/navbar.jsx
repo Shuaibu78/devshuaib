@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const onScroll = ()=> {
-      const isTop = window.scrollY < 100;
+      const isTop = window.scrollY < 80;
       if (isTop !== scroll) {
         setScroll(!scroll);
       }
@@ -21,7 +21,7 @@ const Navbar = () => {
   }, [scroll, setScroll]);
 
   return (
-      <nav className={scroll ? `bg-gray-hero fixed px-6 py-2 flex justify-between items-center w-full lg:px-6 lg:py-2 lg:justify-between lg:items-center` : `bg-gray-scroll fixed px-6 py-2 flex justify-between items-center w-full lg:px-6 lg:py-2 lg:justify-between lg:items-center`}>
+      <nav className={scroll ? `z-30 bg-gray-hero fixed px-6 py-2 flex justify-between items-center w-full lg:px-6 lg:py-2 lg:justify-between lg:items-center` : `z-30 bg-gray-scroll fixed px-6 py-2 flex justify-between items-center w-full lg:px-6 lg:py-2 lg:justify-between lg:items-center`}>
         <div>
           <img src={Logo} className="" alt="logo"/>
         </div>
