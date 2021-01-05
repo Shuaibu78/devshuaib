@@ -1,7 +1,7 @@
-import ParitieBanner from "../images/paritiehome.png";
-import gdgMinnaBanner from "../images/gdgminna.png";
-import ConvidBanner from "../images/convid.png";
-import BakeryBanner from "../images/bakery.png";
+import ParitieBanner from "./images/paritiehome.png";
+import gdgMinnaBanner from "./images/gdgminna.png";
+import ConvidBanner from "./images/convid.png";
+import BakeryBanner from "./images/bakery.png";
 
 export const projects = [
   {

@@ -1,49 +1,39 @@
+import ExperienceData from "../experienceData";
+
 const Experience = () => {
   return (
     <section id="services" className="bg-gray-hero flex flex-col py-24">
-      <div className="flex items-center justify-center flex-col">
-        <h1 className="text-gray-300 text-4xl self-center">Experience</h1>
-        <span className=" self-center ">
-          <hr className="service_line" />
-        </span>
-      </div>
-      <div className="flex items-center justify-center text-gray-500 mt-4">
-        <p className="py-4 px-8 p-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam optio corporis explicabo beatae tenetur voluptatum praesentium, nihil possimus culpa officia totam, at perspiciatis fugit. Officia eius nesciunt sequi beatae!</p>
-      </div>
-      <div className="grid grid-cols-3 container w-full mx-auto mt-4 experience-bg-color" >
-        <div className="flex flex-col items-start justify-center p-12 border-gray-300 border">
-          <p className="header-color">June 2018 - December 2019</p>
-          <h2 className="text-white text-2xl font-bold ">Frontend engineer</h2>
-          <p className="header-color">Quictel solution</p>
-            <div>
-              <p className="experience-text-color py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Numquam blanditiis esse omnis, repellat amet quisquam consequatur iure eveniet.
-              </p>
-            </div>
+      <div className="flex flex-col w-11/12 sm:w-10/12 mx-auto">
+        <div className="flex items-center justify-center flex-col">
+          <h1 className="text-gray-300 text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
+            experience
+          </h1>
+          <span className=" self-center ">
+            <hr className="service_line" />
+          </span>
         </div>
-        <div className="flex flex-col items-start justify-center p-12 border-gray-300 border">
-          <p className="header-color">June 2018 - December 2019</p>
-          <h2 className="text-white text-2xl font-bold ">Frontend engineer</h2>
-          <p className="header-color">Quictel solution</p>
-            <div>
-              <p className="experience-text-color py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Numquam blanditiis esse omnis, repellat amet quisquam consequatur iure eveniet.
-              </p>
-            </div>
-        </div>
-        <div className="flex flex-col items-start justify-center p-12 border-gray-300 border">
-          <p className="header-color">June 2018 - December 2019</p>
-          <h2 className="text-white text-2xl font-bold ">Frontend engineer</h2>
-          <p className="header-color">Quictel solution</p>
-            <div>
-              <p className="experience-text-color py-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Numquam blanditiis esse omnis, repellat amet quisquam consequatur iure eveniet.
-              </p>
-            </div>
+
+        <div className="sm:grid sm:grid-cols-2 block w-10/12 container mx-auto mt-16 experience-bg-color">
+          {ExperienceData.map((data) => {
+            const { date, position, companyName, Description } = data;
+
+            return (
+              <div className="flex flex-col items-start justify-center xl:p-6 p-4 border-gray-300 border hover:bg-gold-100 exp-card-height">
+                <p className="header-color text-base xl:text-lg">{date}</p>
+                <h2 className="text-white xl:text-2xl lg:text-1xl text-xl font-bold capitalize">
+                  {position}
+                </h2>
+                <p className="header-color capitalize">{companyName}</p>
+                <div>
+                  <p className="experience-text-color xl:py-10 py-6">{Description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Experience;
