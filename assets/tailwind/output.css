@@ -570,7 +570,6 @@ iframe,
 embed,
 object {
   display: block;
-  vertical-align: middle;
 }
 
 /**
@@ -1892,7 +1891,7 @@ video {
 .bg-gray-scroll {
   --bg-opacity: 1;
   background-color: #252525;
-  background-color: rgba(37,37,37,, var(--bg-opacity));
+  background-color: rgba(37,37,37, var(--bg-opacity));
 }
 
 .bg-gray-hero {
