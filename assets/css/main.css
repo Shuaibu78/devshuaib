@@ -470,14 +470,20 @@ body {
   .right-50 {
     right: 20px;
   }
+
+  .left-50 {
+    left: 20px;
+  }
+
   .w-h {
     width: 90%;
-    height: 200px;
+    height: 220px;
   }
+
   .show-x {
     z-index: 24;
     position: absolute;
-    top: 52px;
+    top: 56px;
   }
 }
 
