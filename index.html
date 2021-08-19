@@ -1,341 +1,892 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shuaibu Muhammad | Portfolio website</title>
+    <meta
+      name="description"
+      content="I’m a hard working and dedicated professional front-end developer/user interface designer with a keen eye for detail, and a determination to deliver the very highest quality. I take great pride in my work, and I always try to better myself with every project I work on.
+  I like building easy to use, user-friendly websites and application."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="portfolio, freelance frontend developer, frontend-developer, frontend portfolio, shuaibu, muhammad, shuaibu muhammad, shuaibu muhammad portfolio, best frontend website, devshuaib"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <title>Shuaibu Muhammad | Portfolio website</title>
-  <meta name="description" content="I’m a hard working and dedicated professional front-end developer/user interface designer with a keen eye for detail, and a determination to deliver the very highest quality. I take great pride in my work, and I always try to better myself with every project I work on.
-  I like building easy to use, user-friendly websites and application." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords"
-    content="portfolio, freelance frontend developer, frontend-developer, frontend portfolio, shuaibu, muhammad, shuaibu muhammad, shuaibu muhammad portfolio, best frontend website, devshuaib" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" href="icon.png" />
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/tailwind/output.css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
 
-  <link rel="stylesheet" href="./assets/tailwind/output.css">
-  <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-  <link rel="stylesheet" href="./assets/css/main.css" />
+    <meta name="theme-color" content="#000000" />
+  </head>
 
-  <meta name="theme-color" content="#000000" />
-</head>
+  <body>
+    <!-- I've set max-w-screen-md, you may need to change it -->
+    <nav
+      class="
+        bg-gray-hero
+        shadow
+        fixed
+        w-full
+        z-30
+        mx-auto
+        inset-x-0
+        top-0
+        flex
+        justify-between
+        items-center
+      "
+    >
+      <div class="sm:w-10/12 w-11/12 flex justify-between items-center">
+        <a
+          href="./index.html"
+          class="
+            font-extrabold
+            m-3
+            uppercase
+            inline-flex
+            hover:text-pink-700
+            transition-all
+            duration-500
+          "
+        >
+          <img
+            src="./assets/img/logo.webp"
+            alt="logo"
+            class="h-12 sm:h-14 sm:w-24 w-20"
+          />
+        </a>
 
-<body>
-  <!-- I've set max-w-screen-md, you may need to change it -->
-  <nav class="bg-gray-hero shadow fixed w-full z-30 mx-auto inset-x-0 top-0 flex justify-between items-center">
-    <div class="sm:w-10/12 w-11/12 flex justify-between items-center">
-      <a href="./index.html" class="font-extrabold m-3 uppercase inline-flex hover:text-pink-700 transition-all duration-500">
-        <img src="./assets/img/logo.webp" alt="logo" class="h-12 sm:h-14 sm:w-24 w-20">
-      </a>
+        <button
+          id="mobileMenuButton"
+          class="p-3 focus:outline-none md:hidden"
+          title="Open side menu"
+        >
+          <!-- SVG For "x" button -->
+          <svg
+            id="mobileMenuButtonClose"
+            class="w-8 h-8 pr-2 text-black hidden show-x"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+          <!-- SVG For "Menu burger" button -->
+          <svg
+            id="mobileMenuButtonOpen"
+            class="w-8 h-6 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
 
-      <button id="mobileMenuButton" class="p-3 focus:outline-none md:hidden" title="Open side menu">
-        <!-- SVG For "x" button -->
-        <svg id="mobileMenuButtonClose" class="w-8 h-8 pr-2 text-black hidden show-x" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-        <!-- SVG For "Menu burger" button -->
-        <svg id="mobileMenuButtonOpen" class="w-8 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-
-      <!-- List of nav item -->
-      <div id="sideMenuHideOnMobile"
-        class="bg-white sm:bg-transparent sm:text-white font-semibold z-20 rounded-bl-md flex justify-center items-center absolute top-nill right-50 right-70 left-50 transition-all duration-500 transform translate-x-0 w-h md:w-auto px-3 md:px-0 flex-col md:flex-row -translate-y-full md:translate-y-0 md:mt-1 md:items-center md:mx-1 md:uppercase">
-        <a href="#services"
-          class="mx-0 sm:mx-2 my-2 border-b-2 text-xl border-transparent hover:text-gold-100 text-black sm:text-white py-1 sm:p-0">Services</a>
-        <a href="#work"
-          class="mx-0 sm:mx-2 my-2 border-b-2 text-xl border-transparent hover:text-gold-100 text-black sm:text-white py-1 sm:p-0">Projects</a>
-        <a href="assets/img/cv.pdf"
-          download="Frontend developer resume"
-          class="mx-0 sm:mx-2 my-2 text-xl border-b-2 border-transparent text-black sm:text-white py-1 sm:p-0"
-          target="_blank">Resume</a>
+        <!-- List of nav item -->
+        <div
+          id="sideMenuHideOnMobile"
+          class="
+            bg-white
+            sm:bg-transparent sm:text-white
+            font-semibold
+            z-20
+            rounded-bl-md
+            flex
+            justify-center
+            items-center
+            absolute
+            top-nill
+            right-50 right-70
+            left-50
+            transition-all
+            duration-500
+            transform
+            translate-x-0
+            w-h
+            md:w-auto
+            px-3
+            md:px-0
+            flex-col
+            md:flex-row
+            -translate-y-full
+            md:translate-y-0 md:mt-1 md:items-center md:mx-1 md:uppercase
+          "
+        >
+          <a
+            href="#services"
+            class="
+              mx-0
+              sm:mx-2
+              my-2
+              border-b-2
+              text-xl
+              border-transparent
+              hover:text-gold-100
+              text-black
+              sm:text-white
+              py-1
+              sm:p-0
+            "
+            >Services</a
+          >
+          <a
+            href="#work"
+            class="
+              mx-0
+              sm:mx-2
+              my-2
+              border-b-2
+              text-xl
+              border-transparent
+              hover:text-gold-100
+              text-black
+              sm:text-white
+              py-1
+              sm:p-0
+            "
+            >Projects</a
+          >
+          <a
+            href="assets/img/cv.pdf"
+            download="Frontend developer resume"
+            class="
+              mx-0
+              sm:mx-2
+              my-2
+              text-xl
+              border-b-2 border-transparent
+              text-black
+              sm:text-white
+              py-1
+              sm:p-0
+            "
+            target="_blank"
+            >Resume</a
+          >
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section class="flex justify-center items-center pt-32 w-full bg-gray-hero">
-    <div class="flex flex-col-reverse sm:flex-row items-center justify-between w-11/12 sm:w-10/12 mx-auto">
-      <div class=" pt-6 sm:pt-0 flex items-center pb-24 justify-between flex-col sm:w-1/2">
-        <div class="pb-6 sm:self-start self-center" style="text-align: center;">
-          <span class="text-white sm:text-1xl md:text-2xl lg:text-3xl capitalize" style="font-size: 1.3rem;">hello, I'm shuaib muhammad,</span>
+    <section class="flex justify-center items-center pt-32 w-full bg-gray-hero">
+      <div
+        class="
+          flex flex-col-reverse
+          sm:flex-row
+          items-center
+          justify-between
+          w-11/12
+          sm:w-10/12
+          mx-auto
+        "
+      >
+        <div
+          class="
+            pt-6
+            sm:pt-0
+            flex
+            items-center
+            pb-24
+            justify-between
+            flex-col
+            sm:w-1/2
+          "
+        >
+          <div
+            class="pb-6 sm:self-start self-center"
+            style="text-align: center"
+          >
+            <span
+              class="text-white sm:text-1xl md:text-2xl lg:text-3xl capitalize"
+              style="font-size: 1.3rem"
+              >hello, I'm shuaib muhammad,</span
+            >
+            <h1
+              class="
+                text-gray-400
+                font-bold
+                sm:text-3xl
+                leading-snug
+                md:text-3xl
+                lg:leading-tight lg:text-4xl
+                capitalize
+              "
+              style="font-size: 1.8rem"
+            >
+              a frontend engineer.
+            </h1>
+          </div>
+          <div class="sm:self-start self-center my-6">
+            <a
+              href="https://wa.me/message/BVMCSCT6LBGCP1"
+              rel="noreferrer"
+              target="_blank"
+              class="
+                bg-gold-100
+                text-black
+                py-4
+                px-10
+                sm:px-16
+                text-sm
+                sm:text-base
+                md:text-lg
+                lg:text-xl
+                xl:text-1xl
+                font-semibold
+              "
+            >
+              let's chat
+            </a>
+          </div>
+        </div>
+        <div
+          class="profile-bg w-11/12 sm:w-1/2 flex items-center justify-center"
+        >
+          <img src="assets/img/profile-pic.png" alt="shuaib" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="
+        mx-auto
+        flex
+        lg:flex-row
+        flex-col
+        justify-center
+        items-center
+        w-full
+        bg-gray-about
+        lg:py-16
+        py-12
+      "
+    >
+      <div
+        class="
+          mx-auto
+          flex
+          lg:flex-row
+          flex-col
+          justify-between
+          items-center
+          w-11/12
+          sm:w-10/12
+        "
+      >
+        <div
+          class="
+            about-bg
+            lg:w-1/2 lg:ml-8
+            flex flex-col
+            justify-center
+            items-center
+            about-bg-height
+          "
+        >
           <h1
-            class="text-gray-400 font-bold sm:text-3xl leading-snug md:text-3xl lg:leading-tight lg:text-4xl capitalize" style="font-size: 1.8rem;">
-            a frontend engineer.
+            class="
+              text-gray-300 text-1xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              self-center
+              capitalize
+            "
+          >
+            about me
           </h1>
-        </div>
-        <div class="sm:self-start self-center my-6">
-          <a href="https://wa.me/message/BVMCSCT6LBGCP1" rel="noreferrer" target="_blank"
-            class="bg-gold-100 text-black py-4 px-10 sm:px-16 text-sm sm:text-base md:text-lg lg:text-xl xl:text-1xl font-semibold">
-            let's chat
-          </a>
-        </div>
-      </div>
-      <div class="profile-bg w-11/12 sm:w-1/2 flex items-center justify-center">
-        <img src="assets/img/profile-pic.png" alt="shuaib" />
-      </div>
-    </div>
-  </section>
-
-  <section id="about"
-    class="mx-auto flex lg:flex-row flex-col justify-center items-center w-full bg-gray-about lg:py-16 py-12">
-    <div class="mx-auto flex lg:flex-row flex-col justify-between items-center w-11/12 sm:w-10/12">
-      <div class="about-bg lg:w-1/2 lg:ml-8 flex flex-col justify-center items-center about-bg-height">
-        <h1 class="text-gray-300 text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
-          about me
-        </h1>
-        <span class=" lg:self-start lg:pl-48">
-          <hr class="line" />
-        </span>
-      </div>
-      <div class="flex items-center lg:justify-between justify-center flex-col lg:w-1/2 text-gray-500">
-        <div class="flex items-center lg:justify-between justify-center flex-col py-2">
-          <p class="py-4 w-full px-8 text-justify">
-            I’m a hard working and dedicated professional front-end
-            developer/user interface designer with a keen eye for detail, and
-            a determination to deliver the very highest quality. I take great
-            pride in my work, and I always try to better myself with every
-            project I work on. I like to write semantic, cross browser
-            compatible code that is re-useable, maintainable and easy to
-            understand.
-          </p>
-          <p class="py-4 w-full px-8">
-            I am motivated, enthusiastic and well organised, with a keen eye
-            for beautiful design, primarily based around user interfaces.
-          </p>
-        </div>
-        <div class="flex lg:justify-between justify-center items-center w-90">
-          <a href="#work"
-            class="bg-gold-100 border-2 border-gold-100 hover:bg-transparent hover:text-gold-100 text-black py-2 w-32 sm:w-40 lg:w-56 sm:py-4 text-base sm:text-lg md:text-xl lg:text-1xl font-semibold text-center">View
-            Works</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a class="top-link hide" href="" id="js-top">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-    <span class="screen-reader-text">Back to top</span>
-  </a>
-
-  <section id="services" class="bg-gray-hero flex flex-col py-24">
-    <div class="flex flex-col w-11/12 sm:w-10/12 mx-auto">
-      <div class="flex items-center justify-center flex-col">
-        <h1 class="text-gray-300 text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
-          services
-        </h1>
-        <span class="self-center">
-          <hr class="service_line" />
-        </span>
-      </div>
-
-      <div class="sm:grid sm:grid-cols-2 block w-80 sm:gap-12 mx-auto mt-10 sm:mt-16">
-        <div class="rounded-lg relative mb-10 sm:mb-0">
-          <div class="service-description text-white">
-            <h2 class="xl:text-2xl lg:text-1xl md:text-lg font-semibold uppercase">
-              web development
-            </h2>
-            <p>
-              solving business problem by creating easy-to-use, user friendly websites and creating user-centered eperience for mobile and web platform.
-            </p>
-          </div>
-          <div class="overlay bg-overlay-100"></div>
-          <img src="./assets/img/workplace.webp" class="img-size" alt="workplace" />
-        </div>
-        <div class="rounded-lg relative">
-          <div class="service-description text-white">
-            <h2 class="xl:text-2xl lg:text-1xl md:text-lg font-semibold uppercase">
-              Branding
-            </h2>
-            <p>
-              Translating brand values, attributes, and goals into visual identity and brand guidelines for easy scaling across all media.
-            </p>
-          </div>
-          <div class="overlay bg-overlay-300"></div>
-          <img src="./assets/img/hands-bump.webp" class="img-size" alt="workplace" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="work" class="mx-auto flex flex-col justify-center items-center w-full bg-gray-about py-16">
-    <div class="mx-auto flex flex-col justify-between items-center w-11/12 sm:w-10/12 md:w-11/12 lg:w-10/12">
-      <div class="flex items-center justify-center flex-col">
-        <h1 class="text-gray-300 text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
-          Latest Works
-        </h1>
-        <span class=" self-center ">
-          <hr class="service_line" />
-        </span>
-      </div>
-      <div class="flex items-center justify-center text-gray-500 mt-4">
-        <p class="py-4 px-8 p-width text-justify sm:text-center">
-          I have had the opportunity of working with amazing businesses on
-          very interesting projects. These are the recent project i have
-          worked on.
-        </p>
-      </div>
-      <div class="features projectwidth">
-        <article class="bg-gray-500">
-          <a href="https://www.paritie.com" target="_blank" rel="noreferrer" class="image">
-            <img src="./assets/img/paritiehome.png" alt="paritie" />
-          </a>
-          <h3 class="major font-black text-white">Paritie website</h3>
-          <p class="text-sm text-white py-2">They help startups and enterprises launch and scale with digital products that makes them standout in the market.</p>
-          <a href="https://www.paritie.com" target="_blank" rel="noreferrer" class="special font-extrabold text-white">Click
-            to preview</a>
-        </article>
-        <article class="bg-gray-500">
-          <a href="https://minna.gdg.ng/" target="_blank" rel="noreferrer" class="image">
-            <img src="./assets/img/gdgminna.png" alt="gdgminna" />
-          </a>
-          <h3 class="major font-black text-white">Gdgminna website</h3>
-          <p class="text-sm text-white py-2">Google Developers Group Minna is a Community where Developers and IT Enthusiast meet to solve problems using Google products.</p>
-          <a href="https://minna.gdg.ng/" target="_blank" rel="noreferrer" class="special font-extrabold text-white">Click
-            to preview</a>
-        </article>
-        <article class="bg-gray-500">
-          <a href="https://convid19-tracker.netlify.app/" target="_blank" rel="noreferrer" class="image">
-            <img src="./assets/img/convid.png" alt="ConvidBanner" />
-          </a>
-          <h3 class="major font-black text-white">Convid-19 tracker</h3>
-          <p class="text-sm text-white py-2">convid19 tracker website gives a detailed report about the number of active cases, recoveries and death cused by convid19</p>
-          <a href="https://convid19-tracker.netlify.app/" target="_blank" rel="noreferrer" class="special font-extrabold text-white">Click
-            to preview</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="bg-gray-hero flex flex-col py-24">
-    <div class="flex flex-col w-11/12 sm:w-10/12 mx-auto">
-      <div class="flex items-center justify-center flex-col">
-        <h1 class="text-gray-300 text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
-          experience
-        </h1>
-        <span class=" self-center ">
-          <hr class="service_line" />
-        </span>
-      </div>
-
-      <div class="sm:grid sm:grid-cols-2 block w-9/12 md:w-10/12 lg:w-9/12 container mx-auto mt-16 experience-bg-color">
-        <div
-          class="flex flex-col items-start justify-center xl:p-6 p-4 border-gray-300 border hover:bg-gold-100 exp-card-height">
-          <p class="header-color text-base xl:text-lg">August 2020 - present</p>
-          <h2 class="text-white xl:text-2xl lg:text-1xl text-xl font-bold capitalize">
-            frontend engineer
-          </h2>
-          <p class="header-color capitalize">quicktel solution</p>
-          <div>
-            <p class="experience-text-color xl:py-10 py-6">
-              Building easy-to-use, user friendly website and also solving business problems while Collaborating well with other team members to determine the best design specifications and details.
-            </p>
-          </div>
+          <span class="lg:self-start lg:pl-48">
+            <hr class="line" />
+          </span>
         </div>
         <div
-          class="flex flex-col items-start justify-center xl:p-6 p-4 border-gray-300 border hover:bg-gold-100 exp-card-height">
-          <p class="header-color text-base xl:text-lg">June 2018 - December 2019</p>
-          <h2 class="text-white xl:text-2xl lg:text-1xl text-xl font-bold capitalize">
-            javaScript developer intern
-          </h2>
-          <p class="header-color capitalize">Paritie dynamic enterprise limited</p>
-          <div>
-            <p class="experience-text-color xl:py-10 py-6">
-              Participated in Building a brand website for the company while Consolidating my Front-End Skills, like Javascript, Reactjs, Css/Sass and HTML. Learned Modular System, design System and how to work in a high paced environment
+          class="
+            flex
+            items-center
+            lg:justify-between
+            justify-center
+            flex-col
+            lg:w-1/2
+            text-gray-500
+          "
+        >
+          <div
+            class="
+              flex
+              items-center
+              lg:justify-between
+              justify-center
+              flex-col
+              py-2
+            "
+          >
+            <p class="py-4 w-full px-8 text-justify">
+              I’m a hard working and dedicated professional front-end developer
+              with a keen eye for detail, and a determination to deliver the
+              very highest quality. I take great pride in my work, and I always
+              try to better myself with every project I work on. I like to write
+              semantic, cross browser compatible code that is re-useable,
+              maintainable and easy to understand.
             </p>
+            <p class="py-4 w-full px-8">
+              I am motivated, enthusiastic and well organised, with a keen eye
+              for beautiful design.
+            </p>
+          </div>
+          <div class="flex lg:justify-between justify-center items-center w-90">
+            <a
+              href="#work"
+              class="
+                bg-gold-100
+                border-2 border-gold-100
+                hover:bg-transparent hover:text-gold-100
+                text-black
+                py-2
+                w-32
+                sm:w-40
+                lg:w-56
+                sm:py-4
+                text-base
+                sm:text-lg
+                md:text-xl
+                lg:text-1xl
+                font-semibold
+                text-center
+              "
+              >View Works</a
+            >
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="mx-auto flex flex-col justify-center items-center w-full bg-gray-about pt-24">
-    <div class="mx-auto flex flex-col justify-between items-center w-11/12 sm:w-10/12">
-      <div class="flex items-center justify-center flex-col">
-        <h1 class="text-gray-300 font-semibold text-1xl sm:text-2xl md:text-3xl lg:text-4xl self-center capitalize">
-          let's work together
-        </h1>
-        <span class=" self-center ">
-          <hr class="service_line" />
-        </span>
-      </div>
-      <div class="flex flex-col-reverse md:flex-row justify-between items-start w-10/12 my-16">
-        <div class="w-full sm:w-5/12 flex flex-col items-start justify-around">
-          <h3 class="text-gray-300 font-bold text-lg mt-6 sm:mt-0">
-            Contact Info
-          </h3>
-          <div class="flex items-center mt-6 sm:mt-10 w-2/5">
-            <img class="iconWidth" src="./assets/img/envelope.png" alt="email icon" />
-            <p class="iconTextColor leading-3 text-base pl-4">
-              <a href="mailto:devshuaib@gmail.com?subject=I want to work with you">Devshuaib@gmail.com</a>
-            </p>
+    <a class="top-link hide" href="" id="js-top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+        <path d="M12 6H0l6-6z" />
+      </svg>
+      <span class="screen-reader-text">Back to top</span>
+    </a>
+
+    <section id="services" class="bg-gray-hero flex flex-col py-24">
+      <div class="flex flex-col w-11/12 sm:w-10/12 mx-auto">
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="
+              text-gray-300 text-1xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              self-center
+              capitalize
+            "
+          >
+            services
+          </h1>
+          <span class="self-center">
+            <hr class="service_line" />
+          </span>
+        </div>
+
+        <div
+          class="
+            sm:grid sm:grid-cols-2
+            block
+            w-80
+            sm:gap-12
+            mx-auto
+            mt-10
+            sm:mt-16
+          "
+        >
+          <div class="rounded-lg relative mb-10 sm:mb-0">
+            <div class="service-description text-white">
+              <h2
+                class="
+                  xl:text-2xl
+                  lg:text-1xl
+                  md:text-lg
+                  font-semibold
+                  uppercase
+                "
+              >
+                web development
+              </h2>
+              <p>
+                solving business problem by creating easy-to-use, user friendly
+                websites and creating user-centered eperience for mobile and web
+                platform.
+              </p>
+            </div>
+            <div class="overlay bg-overlay-100"></div>
+            <img
+              src="./assets/img/workplace.webp"
+              class="img-size"
+              alt="workplace"
+            />
           </div>
-          <div class="flex items-center mt-10 sm:mb-16 mb-10 w-4/5">
-            <img class="iconWidth" src="./assets/img/phone-call.png" alt="phone icon" />
-            <p class="iconTextColor leading-3 md:leading-6 lg:leading-3 text-base pl-4">
-              (+234) 9024 762 141
-            </p>
-          </div>
-          <h3 class="text-gray-300 font-bold text-lg">Follow Me</h3>
-          <div class="flex justify-between items-center w-2/5 lg:w-1/5 mt-2">
-            <a href="https://twitter.com/the_shuaib">
-              <img src="./assets/img/twitter.png" alt="twitter" />
-            </a>
-            <a href="https://www.linkedin.com/in/shuaibu-muhammad-823ab4169/">
-              <img src="./assets/img/linkedin.png" alt="linkedin" />
-            </a>
-            <a href="https://github.com/Shuaibu78">
-              <img src="./assets/img/github.png" alt="github" />
-            </a>
+          <div class="rounded-lg relative">
+            <div class="service-description text-white">
+              <h2
+                class="
+                  xl:text-2xl
+                  lg:text-1xl
+                  md:text-lg
+                  font-semibold
+                  uppercase
+                "
+              >
+                Branding
+              </h2>
+              <p>
+                Translating brand values, attributes, and goals into visual
+                identity and brand guidelines for easy scaling across all media.
+              </p>
+            </div>
+            <div class="overlay bg-overlay-300"></div>
+            <img
+              src="./assets/img/hands-bump.webp"
+              class="img-size"
+              alt="workplace"
+            />
           </div>
         </div>
-        <div class="w-full sm:w-7/12 flex flex-col items-start sm:justify-around justify-center">
-          <div>
-            <p class="font-medium text-lg lg:text-xl contact-msg text-justify">
-              I try my best to make better websites, one that are fast, easy
-              to use, beautiful, accessible to all, and frustration-free.
-              Regardless of your specific business requirements, in solving
-              these challenges, you have a great chance of finding success
-              online. If you’d like to find out more about how I work and my
-              process of working with clients, please get in touch and we can
-              then set up a call to discuss how I can be of most value to your
-              project.
+      </div>
+    </section>
+
+    <section
+      id="work"
+      class="
+        mx-auto
+        flex flex-col
+        justify-center
+        items-center
+        w-full
+        bg-gray-about
+        py-16
+      "
+    >
+      <div
+        class="
+          mx-auto
+          flex flex-col
+          justify-between
+          items-center
+          w-11/12
+          sm:w-10/12
+          md:w-11/12
+          lg:w-10/12
+        "
+      >
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="
+              text-gray-300 text-1xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              self-center
+              capitalize
+            "
+          >
+            Latest Works
+          </h1>
+          <span class="self-center">
+            <hr class="service_line" />
+          </span>
+        </div>
+        <div class="flex items-center justify-center text-gray-500 mt-4">
+          <p class="py-4 px-8 p-width text-justify sm:text-center">
+            I have had the opportunity of working with amazing businesses on
+            very interesting projects. These are the recent project i have
+            worked on.
+          </p>
+        </div>
+        <div class="features projectwidth">
+          <article class="bg-gray-500">
+            <a
+              href="https://quickshop.com.ng/"
+              target="_blank"
+              rel="noreferrer"
+              class="image"
+            >
+              <img src="./assets/img/quickshop.png" alt="quickshop" />
+            </a>
+            <h3 class="major font-black text-white">Quick Shop</h3>
+            <p class="text-sm text-white py-2">
+              Quick Shop is an ecommerce website that allows customers to
+              purchase products that are uploaded on the quick manager app
             </p>
+            <a
+              href="https://www.paritie.com"
+              target="_blank"
+              rel="noreferrer"
+              class="special font-extrabold text-white"
+              >Click to preview</a
+            >
+          </article>
+          <article class="bg-gray-500">
+            <a
+              href="https://www.paritie.com"
+              target="_blank"
+              rel="noreferrer"
+              class="image"
+            >
+              <img src="./assets/img/paritiehome.png" alt="paritie" />
+            </a>
+            <h3 class="major font-black text-white">Paritie website</h3>
+            <p class="text-sm text-white py-2">
+              They help startups and enterprises launch and scale with digital
+              products that makes them standout in the market.
+            </p>
+            <a
+              href="https://www.paritie.com"
+              target="_blank"
+              rel="noreferrer"
+              class="special font-extrabold text-white"
+              >Click to preview</a
+            >
+          </article>
+          <article class="bg-gray-500">
+            <a
+              href="https://minna.gdg.ng/"
+              target="_blank"
+              rel="noreferrer"
+              class="image"
+            >
+              <img src="./assets/img/gdgminna.png" alt="gdgminna" />
+            </a>
+            <h3 class="major font-black text-white">Gdgminna website</h3>
+            <p class="text-sm text-white py-2">
+              Google Developers Group Minna is a Community where Developers and
+              IT Enthusiast meet to solve problems using Google products.
+            </p>
+            <a
+              href="https://minna.gdg.ng/"
+              target="_blank"
+              rel="noreferrer"
+              class="special font-extrabold text-white"
+              >Click to preview</a
+            >
+          </article>
+          <article class="bg-gray-500">
+            <a
+              href="https://convid19-tracker.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              class="image"
+            >
+              <img src="./assets/img/convid.png" alt="ConvidBanner" />
+            </a>
+            <h3 class="major font-black text-white">Convid-19 tracker</h3>
+            <p class="text-sm text-white py-2">
+              convid19 tracker website gives a detailed report about the number
+              of active cases, recoveries and death cused by convid19
+            </p>
+            <a
+              href="https://convid19-tracker.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              class="special font-extrabold text-white"
+              >Click to preview</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="bg-gray-hero flex flex-col py-24">
+      <div class="flex flex-col w-11/12 sm:w-10/12 mx-auto">
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="
+              text-gray-300 text-1xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              self-center
+              capitalize
+            "
+          >
+            experience
+          </h1>
+          <span class="self-center">
+            <hr class="service_line" />
+          </span>
+        </div>
+
+        <div
+          class="
+            sm:grid sm:grid-cols-2
+            block
+            w-9/12
+            md:w-10/12
+            lg:w-9/12
+            container
+            mx-auto
+            mt-16
+            experience-bg-color
+          "
+        >
+          <div
+            class="
+              flex flex-col
+              items-start
+              justify-center
+              xl:p-6
+              p-4
+              border-gray-300 border
+              hover:bg-gold-100
+              exp-card-height
+            "
+          >
+            <p class="header-color text-base xl:text-lg">
+              August 2020 - present
+            </p>
+            <h2
+              class="
+                text-white
+                xl:text-2xl
+                lg:text-1xl
+                text-xl
+                font-bold
+                capitalize
+              "
+            >
+              frontend engineer
+            </h2>
+            <p class="header-color capitalize">quicktel solution</p>
+            <div>
+              <p class="experience-text-color xl:py-10 py-6">
+                Building easy-to-use, user friendly website and also solving
+                business problems while Collaborating well with other team
+                members to determine the best design specifications and details.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              items-start
+              justify-center
+              xl:p-6
+              p-4
+              border-gray-300 border
+              hover:bg-gold-100
+              exp-card-height
+            "
+          >
+            <p class="header-color text-base xl:text-lg">
+              June 2018 - December 2019
+            </p>
+            <h2
+              class="
+                text-white
+                xl:text-2xl
+                lg:text-1xl
+                text-xl
+                font-bold
+                capitalize
+              "
+            >
+              javaScript developer intern
+            </h2>
+            <p class="header-color capitalize">
+              Paritie dynamic enterprise limited
+            </p>
+            <div>
+              <p class="experience-text-color xl:py-10 py-6">
+                Participated in Building a brand website for the company while
+                Consolidating my Front-End Skills, like Javascript, Reactjs,
+                Css/Sass and HTML. Learned Modular System, design System and how
+                to work in a high paced environment
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="assets/js/main.js"></script>
+    <section
+      id="contact"
+      class="
+        mx-auto
+        flex flex-col
+        justify-center
+        items-center
+        w-full
+        bg-gray-about
+        pt-24
+      "
+    >
+      <div
+        class="
+          mx-auto
+          flex flex-col
+          justify-between
+          items-center
+          w-11/12
+          sm:w-10/12
+        "
+      >
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="
+              text-gray-300
+              font-semibold
+              text-1xl
+              sm:text-2xl
+              md:text-3xl
+              lg:text-4xl
+              self-center
+              capitalize
+            "
+          >
+            let's work together
+          </h1>
+          <span class="self-center">
+            <hr class="service_line" />
+          </span>
+        </div>
+        <div
+          class="
+            flex flex-col-reverse
+            md:flex-row
+            justify-between
+            items-start
+            w-10/12
+            my-16
+          "
+        >
+          <div
+            class="w-full sm:w-5/12 flex flex-col items-start justify-around"
+          >
+            <h3 class="text-gray-300 font-bold text-lg mt-6 sm:mt-0">
+              Contact Info
+            </h3>
+            <div class="flex items-center mt-6 sm:mt-10 w-2/5">
+              <img
+                class="iconWidth"
+                src="./assets/img/envelope.png"
+                alt="email icon"
+              />
+              <p class="iconTextColor leading-3 text-base pl-4">
+                <a
+                  href="mailto:devshuaib@gmail.com?subject=I want to work with you"
+                  >Devshuaib@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="flex items-center mt-10 sm:mb-16 mb-10 w-4/5">
+              <img
+                class="iconWidth"
+                src="./assets/img/phone-call.png"
+                alt="phone icon"
+              />
+              <p
+                class="
+                  iconTextColor
+                  leading-3
+                  md:leading-6
+                  lg:leading-3
+                  text-base
+                  pl-4
+                "
+              >
+                (+234) 9024 762 141
+              </p>
+            </div>
+            <h3 class="text-gray-300 font-bold text-lg">Follow Me</h3>
+            <div class="flex justify-between items-center w-2/5 lg:w-1/5 mt-2">
+              <a href="https://twitter.com/the_shuaib">
+                <img src="./assets/img/twitter.png" alt="twitter" />
+              </a>
+              <a href="https://www.linkedin.com/in/shuaibu-muhammad-823ab4169/">
+                <img src="./assets/img/linkedin.png" alt="linkedin" />
+              </a>
+              <a href="https://github.com/Shuaibu78">
+                <img src="./assets/img/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="
+              w-full
+              sm:w-7/12
+              flex flex-col
+              items-start
+              sm:justify-around
+              justify-center
+            "
+          >
+            <div>
+              <p
+                class="font-medium text-lg lg:text-xl contact-msg text-justify"
+              >
+                I try my best to make better websites, one that are fast, easy
+                to use, beautiful, accessible to all, and frustration-free.
+                Regardless of your specific business requirements, in solving
+                these challenges, you have a great chance of finding success
+                online. If you’d like to find out more about how I work and my
+                process of working with clients, please get in touch and we can
+                then set up a call to discuss how I can be of most value to your
+                project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () {
-      ga.q.push(arguments);
-    };
-    ga.q = [];
-    ga.l = +new Date();
-    ga("create", "UA-XXXXX-Y", "auto");
-    ga("set", "anonymizeIp", true);
-    ga("set", "transport", "beacon");
-    ga("send", "pageview");
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+    <script src="assets/js/main.js"></script>
 
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
