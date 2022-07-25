@@ -6,7 +6,7 @@
   "author": "Shuaibu Muhammad",
   "scripts": {
     "postcss:build": "postcss assets/tailwind/tailwind.css -o assets/tailwind/output.css --env production",
-    "parcel:build": "parcel build index.html",
+    "build": "parcel:build",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
